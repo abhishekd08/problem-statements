@@ -1,0 +1,59 @@
+New Language
+A new mathematical language (let's call it Ninja) is discovered, in which 8 is completely missing.
+So, new counting becomes . Whole counting is written without 8.
+For example,  comes after  comes after , etc.
+Thus , .
+Now, your task is to perform addition, subtraction, multiplication and division operations on two numbers in this new language Ninja.
+NOTE : The final output also has to be in the language Ninja.
+
+Input Format
+The first line contains an integer, T, denoting the number of test cases.
+For each test case, two integers a and b are given, separated with any one of the above operation .
+It is guaranteed that answer will not be negative.
+For division operation, you have to answer integer division.
+
+Output Format
+For each test case, print the output of operation in Ninja.
+
+Constraints
+
+( a and b are in Ninja language )
+ for division() operation
+ for subtract() operation
+Sample Input
+9
+1+1
+10+5
+10*10
+9*2
+9*9
+9*10
+90-1
+90/2
+79/2
+Sample Output
+2
+15
+100
+17
+71
+90
+79
+40
+39
+Explanation
+Explanation for  is given only.
+First Try to learn how to calculate multiply in math language. For example, if we want to calculate , then write counting in 3 rows and 4 columns and last number(12) will be .
+
+enter image description here
+
+Now, we have to calculate  in Ninja language. So, write counting in 9 rows and 9 columns in Ninja language. Last number of the grid (71) will be the answer.
+
+enter image description here
+
+Note: Your code should be able to convert the sample input into the sample output. However, this is not enough to pass the challenge, because the code will be run on multiple test cases. Therefore, your code must solve this problem statement.
+Time Limit: 1.0 sec(s) for each input file
+Memory Limit: 256 MB
+Source Limit: 1024 KB
+Marking Scheme: Marks are awarded if any testcase passes
+Allowed Languages: Go, Java, Java 8, JavaScript(Rhino), JavaScript(Node.js), Lua, Python, Python 3, Scala

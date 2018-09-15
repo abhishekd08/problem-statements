@@ -1,0 +1,37 @@
+Prize Money
+The Coder bank of Coderland has decided to start an offer for its account holders. The currency denominations used in Coderland are different than those used generally. There are  currency denominations in Coderland which are given in the form of an array. The offer from the bank is that the account holder which requests the minimum amount greater than the maximum currency denomination available at the bank which cannot be paid to the account holder will be given a gift. Since you are a customer of this bank, you want to win this gift. Print the number which can get you this prize.
+
+Input Format
+
+The first line of input contains the integer  denoting the number of currency denominations.
+The second line of input contains  integers separated by spaces denoting the currency denominations available at the bank.
+
+Output Format
+
+Print the number which gets the Gift voucher.
+
+Constraints
+
+    
+
+    
+
+NOTE: Consider the bank has an infinite supply of each denomination. If no such number exists, output "Fake Offer!" without quotes.
+
+Sample Input
+3
+2 6 9
+Sample Output
+Fake Offer!
+Explanation
+The maximum currency denomination available at bank is . So your goal is to find a value greater than 9 which can't be formed using the current denominations available with bank. 
+Suppose we assume answer is 10, but its impossible because you can form value 10 using 1 coin of value 6 and two coins of value 2. Now assume the answer would be 11 , but its clear that if you use one coin of value 9 and one of value 2 then you can form the value 11. So this goes on for ever and there is no value greater than 9 which can't be formed using the given coin denomiations so our output is Fake Offer! .
+
+ 
+
+Note: Your code should be able to convert the sample input into the sample output. However, this is not enough to pass the challenge, because the code will be run on multiple test cases. Therefore, your code must solve this problem statement.
+Time Limit: 2.0 sec(s) for each input file
+Memory Limit: 256 MB
+Source Limit: 1024 KB
+Marking Scheme: Marks are awarded if any testcase passes
+Allowed Languages: Go, Java, Java 8, JavaScript(Rhino), JavaScript(Node.js), Lua, Python, Python 3, Scala
