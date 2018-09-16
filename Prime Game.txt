@@ -1,0 +1,52 @@
+( Problem B ) Prime Game
+Max. Marks: 100
+Alice and Bob have an integer  consisting only of digits 2,3,5,7. They are playing a game with this number. 
+
+The rules of the game are as follows:
+
+Alice starts the game and then both of them take alternating turns.
+In each turn, the player removes one digit either from the front or back of the integer  in the decimal notation. For example, if the player has the integer , then he or she might remove  from the front to obtain  or  from the back to obtain .
+The player who reduces the given integer to a prime number loses the game.
+Note that when the number is reduced to one digit, it will always become a prime number, as it will be equal to one of 2,3,5 or 7.
+
+Determine who wins the game if both play optimally.
+
+Input:
+
+First line:  (number of test cases)
+Next  lines: Contains the description of  test cases. Each test case is described in a single line with an integer .
+Note:
+
+It is guaranteed that the integer  consists of only digits  and .
+The integer  is not a prime number.
+Output:
+
+For each test case:
+
+If Alice wins, then print 'Alice' (without quotes) in a single line.
+If Bob wins, then print 'Bob' (without quotes) in a single line.
+Scoring:
+
+In all test sets, .
+
+In the first test set worth 35 points,  .
+
+In the second test set worth 50 points, .
+
+In the third test set worth 15 points, .
+
+SAMPLE INPUT 
+2
+3237
+3273
+SAMPLE OUTPUT 
+Alice
+Bob
+Explanation
+In the first test, Alice starts with integer 3237 and can turn it into either 323 or 237, neither of which is a prime number.
+
+Let's investigate first what happens if she choses to continue with number 323. Bob can then choose between either 32 or 23. As 23 is a prime which would make Bob lose instantly, he would choose 32. Then, however, Alice loses, as both 3 and 2 are primes, and she has no other turn.
+
+What if Alice picks the other option at the start of the game, and removes the '3' from the beginning? Then Bob is left with number 237 and his situation is much worse. Whatever he chooses, he will end up with a prime right away - as both 23 and 37 are prime numbers. 
+
+Hence, Alice can win by removing the '3' from the beginning.

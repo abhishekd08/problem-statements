@@ -1,0 +1,45 @@
+( Problem A ) Prime Pairs
+Max. Marks: 100
+Alice likes pairs of integers. She calls two pairs of integers ,  conflicting, if the absolute differences of the numbers within the pairs are the same, i.e. . For example pairs  and  are conflicting, while  and  are not.
+
+Bob likes primes. So, Alice wants to give him a list of pairs of primes as a present, hand-painted on a nice paper finished with a wooden frame. She wants to only use prime numbers between  and , inclusive, and each at most once. She does not want to get uncomfortable when painting the present, so she absolutely must not use conflicting pairs. And finally, with these constraints in mind, she wants to make the largest gift possible, i.e. use the maximum amount of primes. 
+
+Input format:
+
+First line:  (number of test cases). Description of  test cases follows.
+Next  lines: Contains the description of  test cases. Each test case is described in a single line containing two space-separated integers  and , where .
+Output:
+
+For each test case, print the answer in the following format:
+
+First line:  (number of prime pairs that you can obtain). 
+Next  lines: Here, the  line should contain the pair . All numbers in pairs should be distinct primes between  and , inclusive, and all the absolute differences must be distinct.
+If there are multiple solutions that maximize the number of pairs, you can print any of them.
+
+Scoring:
+
+In all test sets, .
+
+For the first test set, worth 14 points, it is guaranteed that there are no more than 11 primes in the interval .
+
+For the second test set, worth 14 points, it is guaranteed that there are no more than 21 primes in the interval .
+
+For the third test set, worth 16 points, it is guaranteed that there are no more than 42 primes in the interval .
+
+For the fourth test set, worth 56 points, there are no additional constraints.
+
+SAMPLE INPUT 
+1
+1 11
+SAMPLE OUTPUT 
+2
+2 5
+11 3
+Explanation
+There are 5 primes in the range  - 2,3,5,7 and 11. Alice has made two pairs:  and . The absolute differences within the pairs are  and , respectively. As , those pairs are not conflicting. It is clear that one cannot make 3 or more pairs using 5 items, so this is clearly one of the optimal solutions.
+
+Time Limit:	5.0 sec(s) for each input file.
+Memory Limit:	256 MB
+Source Limit:	1024 KB
+Marking Scheme:	Marks are awarded if any testcase passes.
+Allowed Languages:	Bash, C, C++, C++14, Clojure, C#, D, Erlang, F#, Go, Groovy, Haskell, Java, Java 8, JavaScript(Rhino), JavaScript(Node.js), Julia, Kotlin, Lisp, Lisp (SBCL), Lua, Objective-C, OCaml, Octave, Pascal, Perl, PHP, Python, Python 3, Racket, Ruby, Rust, Scala, Swift, Swift-4.1, Visual Basic
